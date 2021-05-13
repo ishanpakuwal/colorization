@@ -19,7 +19,6 @@ Image colorization is inherently an ill-posed problem with multi-modal uncertain
 In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020.
 
 ## Prerequisites
-* [CUDA 10.1](https://developer.nvidia.com/cuda-10.1-download-archive-update2)
 * Python3
 * Pytorch >= 1.5
 * Detectron2
@@ -73,19 +72,9 @@ All the colorized results would save in `results` folder.
 ## Training the Model
 Please follow this [tutorial](README_TRAIN.md) to train the colorization model.
 
-## License
-This work is licensed under MIT License. See [LICENSE](LICENSE) for details. 
 
-## Citation
-If you find our code/models useful, please consider citing our paper:
-```
-@inproceedings{Su-CVPR-2020,
-  author = {Su, Jheng-Wei and Chu, Hung-Kuo and Huang, Jia-Bin},
-  title = {Instance-aware Image Colorization},
-  booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year = {2020}
-}
+
 ```
 
 ## Acknowledgments
-Our code borrows heavily from the amazing [colorization-pytorch](https://github.com/richzhang/colorization-pytorch) repository.
+Our code borrows heavily from the https://github.com/ericsujw/InstColorization repository.
