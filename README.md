@@ -1,6 +1,5 @@
 # [CVPR 2020] Instance-aware Image Colorization
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ericsujw/InstColorization/blob/master/InstColorization.ipynb)
-![galaxies.gif] (https://media1.tenor.com/images/3f6c307fa9429a1982fcb2a5cded9493/tenor.gif?itemid=5674698)
 
 ### [[Paper](https://arxiv.org/abs/2005.10825)] [[Project Website](https://ericsujw.github.io/InstColorization/)] [[Google Colab](https://colab.research.google.com/github/ericsujw/InstColorization/blob/master/InstColorization.ipynb)]
 
