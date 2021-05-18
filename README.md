@@ -3,6 +3,9 @@
 
 ### [[Paper](https://arxiv.org/abs/2005.10825)] [[Project Website](https://ericsujw.github.io/InstColorization/)] [[Google Colab](https://colab.research.google.com/github/ericsujw/InstColorization/blob/master/InstColorization.ipynb)]
 
+
+<img src="https://github.com/ishanpakuwal/colorization/blob/main/galaxies.gif" width="900">
+
 <p align='center'>
 <img src='imgs/teaser.png' width=1000>
 </p>
