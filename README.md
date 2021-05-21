@@ -8,7 +8,7 @@ We first start with a greyscale image which we colorize using Instance Colorizat
 ## Getting Started
 1. Clone this repo:
 ```sh
-git clone https://github.com/ericsujw/InstColorization
+git clone https://github.com/ishanpakuwal/colorization
 cd InstColorization
 ```
 2. Install [conda](https://www.anaconda.com/).
