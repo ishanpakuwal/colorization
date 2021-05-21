@@ -86,7 +86,7 @@ Please follow this [tutorial](README_TRAIN.md) to train the colorization model.
 
 
 ## Combined Colorization & Seam Carving
-- In the file colorization_and_seamcarving.ipynb, we append the 2 modules: the instance-aware colorizer and the seam carving applications.
+- In the file colorization_and_seamcarving.ipynb, we have the 2 modules: the instance-aware colorizer and the implementations of different applications of seam carving.
 - To get started, open the notebook (found in the root of this repo), and run the cells sequentially
 - As you get used to it, notice how the images we display are loaded and feel free to experiment with your own images as well
 - Enjoy!
