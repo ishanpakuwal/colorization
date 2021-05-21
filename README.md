@@ -2,7 +2,7 @@
 
 <img src="https://github.com/ishanpakuwal/colorization/blob/main/updated_enhanced_colorizer.gif" width="900">
 
-### Above GIF explanation:
+### GIF explanation:
 We first start with a greyscale image which we colorize using Instance Colorization. Next, we take the colorized image and we use seam carving implementation to resize the image upto a particular size. For the demonstration purposes, we resized the image upto 60% of it's original size. Each of these white lines or curves represents a seam that gets removed at each step until we get to the targeted size selected by the user. In the end, we also perform object removal technique as seen in the above gif, person in the image at the start of the gif disappears towards the end.
 
 ## Getting Started
