@@ -1,7 +1,5 @@
 # Augmenting Colorization With Seam Carving
 
-## Seam Carving:
-
 <img src="https://github.com/ishanpakuwal/colorization/blob/main/updated_enhanced_colorizer.gif" width="900">
 
 ### Above GIF explanation:
@@ -27,7 +25,7 @@ conda activate instacolorization
 sh scripts/install.sh
 ```
 
-
+## Seam Carving:
 ### Instructions:
 1. Open seam_carving.ipynb found in the root of this repo
 2. Run the cells sequentially making sure to correctly install and import necessary libraries
