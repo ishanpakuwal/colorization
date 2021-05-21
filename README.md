@@ -1,36 +1,4 @@
-<!-- # [CVPR 2020] Instance-aware Image Colorization -->
-
 # Augmenting Colorization With Seam Carving
-<!-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ericsujw/InstColorization/blob/master/InstColorization.ipynb) -->
-<!-- 
-### [[Paper](https://arxiv.org/abs/2005.10825)] [[Project Website](https://ericsujw.github.io/InstColorization/)] [[Google Colab](https://colab.research.google.com/github/ericsujw/InstColorization/blob/master/InstColorization.ipynb)] -->
-
-
-<!-- <img src="https://github.com/ishanpakuwal/colorization/blob/main/galaxies.gif" width="900"> -->
-<img src="https://github.com/ishanpakuwal/colorization/blob/main/updated_enhanced_colorizer.gif" width="900">
-<!-- 
-<p align='center'>
-<img src='imgs/teaser.png' width=1000>
-</p> -->
-
-Image colorization is inherently an ill-posed problem with multi-modal uncertainty. Previous methods leverage the deep neural network to map input grayscale images to plausible color outputs directly. Although these learning-based methods have shown impressive performance, they usually fail on the input images that contain multiple objects. The leading cause is that existing models perform learning and colorization on the entire image. In the absence of a clear figure-ground separation, these models cannot effectively locate and learn meaningful object-level semantics. In this paper, we propose a method for achieving instance-aware colorization. Our network architecture leverages an off-the-shelf object detector to obtain cropped object images and uses an instance colorization network to extract object-level features. We use a similar network to extract the full-image features and apply a fusion module to full object-level and image-level features to predict the final colors. Both colorization networks and fusion modules are learned from a large-scale dataset. Experimental results show that our work outperforms existing methods on different quality metrics and achieves state-of-the-art performance on image colorization.
-
-
-**Instance-aware Image Colorization**
-<br/>
-[Jheng-Wei Su](https://github.com/ericsujw), 
-[Hung-Kuo Chu](https://cgv.cs.nthu.edu.tw/hkchu/), and 
-[Jia-Bin Huang](https://filebox.ece.vt.edu/~jbhuang/)
-<br/>
-In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020.
-
-## Prerequisites
-* Python3
-* Pytorch >= 1.5
-* Detectron2
-* OpenCV-Python
-* Pillow/scikit-image
-* Please refer to the [env.yml](env.yml) for detail dependencies.
 
 ## Getting Started
 1. Clone this repo:
@@ -51,6 +19,32 @@ conda activate instacolorization
 ```sh
 sh scripts/install.sh
 ```
+
+## Seam Carving:
+
+<img src="https://github.com/ishanpakuwal/colorization/blob/main/updated_enhanced_colorizer.gif" width="900">
+
+### Instructions:
+1. Open seam_carving.ipynb found in the root of this repo
+2. Run the cells in order making to correct install and import necessary libraries
+3. Make sure to run all the implemented functions by running all the cells sequentially
+4. The last cell contains commented out tests on the seam carving functions
+5. Enjoy!
+
+
+
+
+## Colorization:
+The instructions below, starting from 'Prerequisites' to 'Training the Model' were adopted from the original project's repo
+cited in the footer of this document.
+
+## Prerequisites
+* Python3
+* Pytorch >= 1.5
+* Detectron2
+* OpenCV-Python
+* Pillow/scikit-image
+* Please refer to the [env.yml](env.yml) for detail dependencies.
 
 ## Pretrained Model
 1. Download it from [google drive](https://drive.google.com/open?id=1Xb-DKAA9ibCVLqm8teKd1MWk6imjwTBh).
@@ -80,7 +74,23 @@ Please follow this [tutorial](README_TRAIN.md) to train the colorization model.
 
 
 
+## Combined Colorization & Seam Carving
+- In the file colorization_and_seamcarving.ipynb, we append the 2 modules: the instance-aware colorizer and the seam carving applications.
+- To get started, open the notebook (found in the root of this repo), and run the cells sequentially
+- As you get used to it, notice how the images we display are loaded and feel free to experiment with your own
+- Enjoy!
+
 ```
 
 ## Acknowledgments
 Our code borrows heavily from the https://github.com/ericsujw/InstColorization repository.
+
+**Instance-aware Image Colorization**
+<br/>
+[Jheng-Wei Su](https://github.com/ericsujw), 
+[Hung-Kuo Chu](https://cgv.cs.nthu.edu.tw/hkchu/), and 
+[Jia-Bin Huang](https://filebox.ece.vt.edu/~jbhuang/)
+<br/>
+In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020.
+
+```
