@@ -23,6 +23,8 @@ cfg = get_cfg()
 cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x.yaml"))
 cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.7
 cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url("COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x.yaml")
+#Added this line
+cfg.MODEL.DEVICE = "cpu" # we use a CPU Detectron copy
 predictor = DefaultPredictor(cfg)
 
 parser = ArgumentParser()
